@@ -23,7 +23,7 @@ step:
      }
 }
 int main()
-{ // int count=0;
+{  int count=0;
      char arr[10000];
      fgets(arr, 10000, stdin);
      phraser(arr);
