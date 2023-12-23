@@ -10,5 +10,5 @@ int main(int argc, char const *argv[])
     
     } while (index<num) ;
     
-    return 0;
+return 0;
 }

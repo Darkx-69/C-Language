@@ -41,7 +41,10 @@ int main()
 c=spacecount(arr);
 
 for (int i=0;i<strlen(arr);i++)
- {arr[i]=arr[i+c];}
+ {arr[i]=arr[i+c];
+ while(arr[strlen(arr)-1]==' ')
+ {arr[strlen(arr)-i]='/0';
+ i++;}}
  puts (arr);
 
 
