@@ -22,13 +22,28 @@ step:
                }
      }
 }
+int  spacecount(char arr[])
+{ int count=0;
+   for (int i=0;i<strlen(arr);i++)
+     {while(arr[i]==' ')
+     {count++;
+     i++;
+         if(arr[i]!=' ')
+         {goto step;}
+     }}
+     step:return count;}
 int main()
-{  int count=0;
+{  int c;
      char arr[10000];
      fgets(arr, 10000, stdin);
      phraser(arr);
+ 
+c=spacecount(arr);
 
-     puts(arr);
+for (int i=0;i<strlen(arr);i++)
+ {arr[i]=arr[i+c];}
+ puts (arr);
+
 
      return 0;
 }
